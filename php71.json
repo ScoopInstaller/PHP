@@ -17,24 +17,14 @@
         "php-cgi.exe"
     ],
     "persist": [
-        "cli",
-        [
-            "php.ini-production",
-            "cli\\php.ini"
-        ]
+        "conf.d"
     ],
     "env_set": {
-        "PHP_INI_SCAN_DIR": "$dir\\cli;$dir\\cli\\conf.d;"
+        "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
     },
-    "post_install": "
-# Create directory for custom PHP configuration
-if (!(Test-Path \"$dir\\cli\\conf.d\")) {
-    (New-Item -Type directory \"$dir\\cli\\conf.d\") | Out-Null
-}
-
-# Enable extensions to be found in installation-relative folder (the default is to search C:/php)
-(gc \"$dir\\cli\\php.ini\") | % { $_ -replace '; extension_dir = \"ext\"', 'extension_dir = \"ext\"' } | sc \"$dir\\cli\\php.ini\"
-",
+    "pre_install": "bin\\preinstall.ps1",
+    "post_install": "bin\\postinstall.ps1 71",
+    "depends": "php/php71",
     "checkver": {
         "url": "http://windows.php.net/download/",
         "re": "<h3 id=\"php-7.1\".*?>.*?\\(([\\d.]+)\\)</h3>"
