@@ -22,7 +22,6 @@
     "env_set": {
         "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
     },
-    "pre_install": "bin\\preinstall.ps1",
     "post_install": "bin\\postinstall.ps1 71",
     "depends": "php/php71",
     "checkver": {
