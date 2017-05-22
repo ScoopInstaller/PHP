@@ -1,20 +1,21 @@
 {
-    "homepage": "http://windows.php.net",
-    "version": "7.1.5",
+    "homepage": "http://windows.php.net/downloads/releases/",
+    "version": "7.0.19",
     "license": "http://www.php.net/license/",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.1.5-Win32-VC14-x64.zip",
-            "hash": "sha1:fbb252cc617fe6d64fc14e9cb8a75639b51bb800"
+            "url": "http://windows.php.net/downloads/releases/php-7.0.19-Win32-VC14-x64.zip",
+            "hash": "f1fe989702f71e2ce72413ec0875545db7d6251cfc5f00862c8e8c86b581adbe"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.1.5-Win32-VC14-x86.zip",
-            "hash": "sha1:615623145a671589b8012d4f0e9f26c9c955a773"
+            "url": "http://windows.php.net/downloads/releases/php-7.0.19-Win32-VC14-x86.zip",
+            "hash": "287c4d6807c4b3f2917c8f331a0869bc2d17f7e5d7add4e0cb32ddaa81693992"
         }
     },
     "bin": [
         "php.exe",
-        "php-cgi.exe"
+        "php-cgi.exe",
+        "phar.phar.bat"
     ],
     "persist": [
         "conf.d"
@@ -23,10 +24,7 @@
         "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
     },
     "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
-    "checkver": {
-        "url": "http://windows.php.net/download/",
-        "re": "<h3 id=\"php-7.1\".*?>.*?\\(([\\d.]+)\\)</h3>"
-    },
+    "checkver": "/php-7.0.*?>php-([\\d.]+)-Win",
     "autoupdate": {
         "architecture": {
             "64bit": {
@@ -37,11 +35,12 @@
             }
         },
         "hash": {
-            "url": "$baseurl/sha1sum.txt"
+            "url": "$baseurl/sha256sum.txt"
         }
     },
     "suggest": {
         "vcredist": [
+            "extras/vcredist2015",
             "extras/vcredist2017"
         ]
     }
