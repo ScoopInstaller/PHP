@@ -4,10 +4,7 @@
   "license": "http://www.php.net/license/",
   "url": "http://museum.php.net/win32/php-4.3.11-Win32.zip",
   "hash": "14f53e4699a4cb4993f9e841bdfec59f789a9b0b77c6c66c50ce6109fa326f2f",
-  "bin": [
-    "php.exe",
-    "php-cgi.exe"
-  ],
+  "bin": "php.exe",
   "persist": [
     "conf.d"
   ],

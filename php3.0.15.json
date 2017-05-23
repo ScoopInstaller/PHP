@@ -4,10 +4,7 @@
   "license": "http://www.php.net/license/",
   "url": "http://museum.php.net/win32/php-3.0.15-win32.zip",
   "hash": "8235afdd37bea2eff70c88b7feec9fa24f109644664bf62cfe68447057dea319",
-  "bin": [
-    "php.exe",
-    "php-cgi.exe"
-  ],
+  "bin": "php.exe",
   "persist": [
     "conf.d"
   ],
