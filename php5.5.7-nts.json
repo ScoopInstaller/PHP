@@ -14,8 +14,7 @@
   },
   "bin": [
     "php.exe",
-    "php-cgi.exe",
-    "phar.phar.bat"
+    "php-cgi.exe"
   ],
   "persist": [
     "conf.d"

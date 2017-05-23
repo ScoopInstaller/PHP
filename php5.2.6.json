@@ -5,8 +5,7 @@
   "url": "http://windows.php.net/downloads/releases/archives/php-5.2.6-Win32.zip",
   "bin": [
     "php.exe",
-    "php-cgi.exe",
-    "phar.phar.bat"
+    "php-cgi.exe"
   ],
   "persist": [
     "conf.d"

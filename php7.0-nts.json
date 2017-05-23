@@ -1,47 +1,46 @@
 {
-    "homepage": "http://windows.php.net/downloads/releases/",
-    "version": "7.0.19",
-    "license": "http://www.php.net/license/",
-    "architecture": {
-        "64bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.0.19-nts-Win32-VC14-x64.zip",
-            "hash": "dc1709c6d6064a89d1de27316e53b81a9eafaa3141f28c6b86ea90d61321b3cc"
-        },
-        "32bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.0.19-nts-Win32-VC14-x86.zip",
-            "hash": "ec752b643480c7df5c59660e8dd523992acc01e55b2117e46a6bf9202a3da058"
-        }
+  "homepage": "http://windows.php.net/downloads/releases/",
+  "version": "7.0.19",
+  "license": "http://www.php.net/license/",
+  "architecture": {
+    "64bit": {
+      "url": "http://windows.php.net/downloads/releases/php-7.0.19-nts-Win32-VC14-x64.zip",
+      "hash": "dc1709c6d6064a89d1de27316e53b81a9eafaa3141f28c6b86ea90d61321b3cc"
     },
-    "bin": [
-        "php.exe",
-        "php-cgi.exe",
-        "phar.phar.bat"
-    ],
-    "persist": [
-        "conf.d"
-    ],
-    "env_set": {
-        "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
-    },
-    "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
-    "checkver": "/php-7.0.*?>php-([\\d.]+)-Win",
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x64.zip"
-            },
-            "32bit": {
-                "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x86.zip"
-            }
-        },
-        "hash": {
-            "url": "$baseurl/sha256sum.txt"
-        }
-    },
-    "suggest": {
-        "vcredist": [
-            "extras/vcredist2015",
-            "extras/vcredist2017"
-        ]
+    "32bit": {
+      "url": "http://windows.php.net/downloads/releases/php-7.0.19-nts-Win32-VC14-x86.zip",
+      "hash": "ec752b643480c7df5c59660e8dd523992acc01e55b2117e46a6bf9202a3da058"
     }
+  },
+  "bin": [
+    "php.exe",
+    "php-cgi.exe"
+  ],
+  "persist": [
+    "conf.d"
+  ],
+  "env_set": {
+    "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
+  },
+  "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
+  "checkver": "/php-7.0.*?>php-([\\d.]+)-Win",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x64.zip"
+      },
+      "32bit": {
+        "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x86.zip"
+      }
+    },
+    "hash": {
+      "url": "$baseurl/sha256sum.txt"
+    }
+  },
+  "suggest": {
+    "vcredist": [
+      "extras/vcredist2015",
+      "extras/vcredist2017"
+    ]
+  }
 }
