@@ -1,7 +1,7 @@
 {
   "homepage": "http://windows.php.net",
   "version": "5.2.2",
-  "license": "http://www.php.net/license/",
+  "license": "http://www.php.net/license/3_01.txt",
   "url": "http://museum.php.net/php5/php-5.2.2-Win32.zip",
   "hash": "fc3fa03e2824c09ccbc59a9b84b6d1d03e1ff29bd238206f25358ed75554e026",
   "bin": [

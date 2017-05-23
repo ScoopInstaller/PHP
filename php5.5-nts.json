@@ -1,7 +1,7 @@
 {
   "homepage": "http://windows.php.net/downloads/releases/",
   "version": "5.5.38",
-  "license": "http://www.php.net/license/",
+  "license": "http://www.php.net/license/3_01.txt",
   "architecture": {
     "64bit": {
       "url": "http://windows.php.net/downloads/releases/php-5.5.38-nts-Win32-VC11-x64.zip",

@@ -1,7 +1,7 @@
 {
   "homepage": "http://windows.php.net",
   "version": "3.0.17",
-  "license": "http://www.php.net/license/",
+  "license": "GPL",
   "url": "http://museum.php.net/win32/php-3.0.17-win32.zip",
   "hash": "54077c27586fe37b827ff6bc9e89dc213f794b2e4ac8edd2cdef07a2e915e859",
   "bin": "php.exe",

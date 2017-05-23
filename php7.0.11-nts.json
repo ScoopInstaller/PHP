@@ -1,7 +1,7 @@
 {
   "homepage": "http://windows.php.net/downloads/releases/archives",
   "version": "7.0.11",
-  "license": "http://www.php.net/license/",
+  "license": "http://www.php.net/license/3_01.txt",
   "architecture": {
     "64bit": {
       "url": "http://windows.php.net/downloads/releases/archives/php-7.0.11-nts-Win32-VC14-x64.zip",

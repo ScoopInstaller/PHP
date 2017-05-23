@@ -1,7 +1,7 @@
 {
   "homepage": "http://windows.php.net/downloads/releases/archives",
   "version": "5.4.26",
-  "license": "http://www.php.net/license/",
+  "license": "http://www.php.net/license/3_01.txt",
   "bin": [
     "php.exe",
     "php-cgi.exe"
