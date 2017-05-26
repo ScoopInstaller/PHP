@@ -1,6 +1,11 @@
-# Scoop PHP
-PHP bucket for [Scoop Installer](http://scoop.sh)
+# PHP Bucket for [Scoop Installer](http://scoop.sh)
 
-#### It supports custom configuration files on its persistent data
-* `~/scoop/persist/[phpversion]/` used for override the default php.ini-production
-* `~/scoop/persist/[phpversion]/conf.d/` used for extensions
+## Feature
+* All PHP versions from *v3* to *v7*
+* Persistent custom configuration files 
+* Auto update enabled
+* Proxy dead PHP versions *php5.1*, *php5.2*, *php5.3*, *php5.4*
+
+## Usage
+1. Add the bucket with `scoop bucket add php`
+2. Install your prefered PHP version with `scoop install php/php7.1.5`
