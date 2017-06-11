@@ -1,46 +1,46 @@
 {
-  "homepage": "http://windows.php.net/downloads/releases/",
-  "version": "7.1.5",
-  "license": "http://www.php.net/license/3_01.txt",
-  "architecture": {
-    "64bit": {
-      "url": "http://windows.php.net/downloads/releases/php-7.1.5-nts-Win32-VC14-x64.zip",
-      "hash": "6604e0733ff198a5532050b61c0d0dacca512bf7290d34c9595d0a9060c8cf94"
-    },
-    "32bit": {
-      "url": "http://windows.php.net/downloads/releases/php-7.1.5-nts-Win32-VC14-x86.zip",
-      "hash": "e56c05f8c01fa638245a40cf713c5406eb5c1fb5b11b94bdafb130afd923e952"
-    }
-  },
-  "bin": [
-    "php.exe",
-    "php-cgi.exe"
-  ],
-  "persist": [
-    "conf.d"
-  ],
-  "env_set": {
-    "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
-  },
-  "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
-  "checkver": "/php-7.1.*?>php-([\\d.]+)-Win",
-  "autoupdate": {
+    "homepage": "http://windows.php.net/downloads/releases/",
+    "version": "7.1.6",
+    "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
-      "64bit": {
-        "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x64.zip"
-      },
-      "32bit": {
-        "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x86.zip"
-      }
+        "64bit": {
+            "url": "http://windows.php.net/downloads/releases/php-7.1.6-nts-Win32-VC14-x64.zip",
+            "hash": "dcd1ba9b3bc70b68bf61c600174e1c356dcafb49b6b5896e14d5d537c39fb888"
+        },
+        "32bit": {
+            "url": "http://windows.php.net/downloads/releases/php-7.1.6-nts-Win32-VC14-x86.zip",
+            "hash": "b61c6c9bf42106f9278c4948d6eabb7336869b172660d4915b39f610d161a81c"
+        }
     },
-    "hash": {
-      "url": "$baseurl/sha256sum.txt"
+    "bin": [
+        "php.exe",
+        "php-cgi.exe"
+    ],
+    "persist": [
+        "conf.d"
+    ],
+    "env_set": {
+        "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
+    },
+    "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
+    "checkver": "/php-7.1.*?>php-([\\d.]+)-Win",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x64.zip"
+            },
+            "32bit": {
+                "url": "http://windows.php.net/downloads/releases/php-$version-nts-Win32-VC14-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/sha256sum.txt"
+        }
+    },
+    "suggest": {
+        "vcredist": [
+            "extras/vcredist2015",
+            "extras/vcredist2017"
+        ]
     }
-  },
-  "suggest": {
-    "vcredist": [
-      "extras/vcredist2015",
-      "extras/vcredist2017"
-    ]
-  }
 }
