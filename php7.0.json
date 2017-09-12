@@ -1,15 +1,15 @@
 {
     "homepage": "http://windows.php.net/downloads/releases/",
-    "version": "7.0.22",
+    "version": "7.0.23",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.0.22-Win32-VC14-x64.zip",
-            "hash": "64949a2fc01134b22e40a5e848b7700a9b1c56959049f258c43e47173e56eb8d"
+            "url": "http://windows.php.net/downloads/releases/php-7.0.23-Win32-VC14-x64.zip",
+            "hash": "a0e5c319a2d0d98e4e435c3804be41556eee487abfa1a94da54f6b1dbe4635dc"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.0.22-Win32-VC14-x86.zip",
-            "hash": "44daccb0f5a0d1b68821bbad36514017e8dd09b90ae69aa08e683f1e85c95558"
+            "url": "http://windows.php.net/downloads/releases/php-7.0.23-Win32-VC14-x86.zip",
+            "hash": "c6ac14ffb69adfa26c54b86d989ae3917920e2b071e71b88e39e3d2a119d0259"
         }
     },
     "bin": [
