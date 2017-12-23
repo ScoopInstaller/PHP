@@ -1,0 +1,46 @@
+{
+    "homepage": "http://windows.php.net/downloads/releases/",
+    "version": "7.2.0",
+    "license": "http://www.php.net/license/3_01.txt",
+    "architecture": {
+        "64bit": {
+            "url": "http://windows.php.net/downloads/releases/php-7.2.0-Win32-VC15-x64.zip",
+            "hash": "275c58e86e0490146684e4f731917484306a3f269dc6f6f55f31aabb808743d0"
+        },
+        "32bit": {
+            "url": "http://windows.php.net/downloads/releases/php-7.2.0-Win32-VC15-x86.zip",
+            "hash": "28bd43ba9148549f8b70b28ae33415b3103e3b3cbaabcd4619fdac47a1739f7f"
+        }
+    },
+    "bin": [
+        "php.exe",
+        "php-cgi.exe"
+    ],
+    "persist": [
+        "conf.d"
+    ],
+    "env_set": {
+        "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
+    },
+    "post_install": "iex(gc $bucketsdir\\$bucket\\bin\\postinstall.ps1 -Raw)",
+    "checkver": "/php-7.1.*?>php-([\\d.]+)-Win",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://windows.php.net/downloads/releases/php-$version-Win32-VC15-x64.zip"
+            },
+            "32bit": {
+                "url": "http://windows.php.net/downloads/releases/php-$version-Win32-VC15-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/sha256sum.txt"
+        }
+    },
+    "suggest": {
+        "vcredist": [
+            "extras/vcredist2015",
+            "extras/vcredist2017"
+        ]
+    }
+}
