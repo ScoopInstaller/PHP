@@ -1,15 +1,15 @@
 {
     "homepage": "http://windows.php.net/downloads/releases/",
-    "version": "7.1.15",
+    "version": "7.1.19",
     "license": "http://www.php.net/license/3_01.txt",
     "architecture": {
         "64bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.1.15-nts-Win32-VC14-x64.zip",
-            "hash": "8ed71c979debb3c5bd9b3b0aef3357f555681ac8a9acd63ba59687d8e49dcd4b"
+            "url": "http://windows.php.net/downloads/releases/php-7.1.19-nts-Win32-VC14-x64.zip",
+            "hash": "7a41f013bfe5d4711a9588924be052b41898898cccc7cb0d17bb0e620703bd14"
         },
         "32bit": {
-            "url": "http://windows.php.net/downloads/releases/php-7.1.15-nts-Win32-VC14-x86.zip",
-            "hash": "a289a09c0af14039f29c5064a1c286e61eba8be81e0c10de1447ba9f046d86e5"
+            "url": "http://windows.php.net/downloads/releases/php-7.1.19-nts-Win32-VC14-x86.zip",
+            "hash": "7298e09d4fc14dde79c5a9ad86d95ff4232b937f6a465d6edebe91c0739773de"
         }
     },
     "bin": [
