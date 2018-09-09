@@ -1,8 +1,8 @@
 {
-  "homepage": "http://windows.php.net",
+  "homepage": "https://windows.php.net",
   "version": "4.1.1",
   "license": "http://www.php.net/license/3_01.txt",
-  "url": "http://museum.php.net/win32/php-4.1.1-Win32.zip",
+  "url": "https://museum.php.net/win32/php-4.1.1-Win32.zip",
   "hash": "d07eccf11243933bdb6fa0fcbd189c1b9e584101a08c8c096bdf33252a674fe8",
   "bin": "php.exe",
   "persist": [

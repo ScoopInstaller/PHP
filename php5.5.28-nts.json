@@ -1,14 +1,14 @@
 {
-  "homepage": "http://windows.php.net/downloads/releases/archives",
+  "homepage": "https://windows.php.net/downloads/releases/archives",
   "version": "5.5.28",
   "license": "http://www.php.net/license/3_01.txt",
   "architecture": {
     "64bit": {
-      "url": "http://windows.php.net/downloads/releases/archives/php-5.5.28-nts-Win32-VC11-x64.zip",
+      "url": "https://windows.php.net/downloads/releases/archives/php-5.5.28-nts-Win32-VC11-x64.zip",
       "hash": "a2e1bcaab121d5a44ffc719faa555e329b7501eeb35c89db2638613036a55f5c"
     },
     "32bit": {
-      "url": "http://windows.php.net/downloads/releases/archives/php-5.5.28-nts-Win32-VC11-x86.zip",
+      "url": "https://windows.php.net/downloads/releases/archives/php-5.5.28-nts-Win32-VC11-x86.zip",
       "hash": "bc89302057bf684294c6328a1627c4dc9fc443101ef7faebd4e8031df45b9bfb"
     }
   },

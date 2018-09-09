@@ -1,8 +1,8 @@
 {
-  "homepage": "http://windows.php.net",
+  "homepage": "https://windows.php.net",
   "version": "3.0.15",
   "license": "GPL",
-  "url": "http://museum.php.net/win32/php-3.0.15-win32.zip",
+  "url": "https://museum.php.net/win32/php-3.0.15-win32.zip",
   "hash": "8235afdd37bea2eff70c88b7feec9fa24f109644664bf62cfe68447057dea319",
   "bin": "php.exe",
   "persist": [

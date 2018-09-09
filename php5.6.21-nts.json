@@ -1,14 +1,14 @@
 {
-  "homepage": "http://windows.php.net/downloads/releases/archives",
+  "homepage": "https://windows.php.net/downloads/releases/archives",
   "version": "5.6.21",
   "license": "http://www.php.net/license/3_01.txt",
   "architecture": {
     "64bit": {
-      "url": "http://windows.php.net/downloads/releases/archives/php-5.6.21-nts-Win32-VC11-x64.zip",
+      "url": "https://windows.php.net/downloads/releases/archives/php-5.6.21-nts-Win32-VC11-x64.zip",
       "hash": "ee086678c7197fe9d9feeb2e7c43eb4d47fe93bb5d1ecf97c4922d390e409955"
     },
     "32bit": {
-      "url": "http://windows.php.net/downloads/releases/archives/php-5.6.21-nts-Win32-VC11-x86.zip",
+      "url": "https://windows.php.net/downloads/releases/archives/php-5.6.21-nts-Win32-VC11-x86.zip",
       "hash": "dc1d54dab6ec8c00f70137927504e4f222c8395f10760b6beecfcfa94e08249f"
     }
   },
