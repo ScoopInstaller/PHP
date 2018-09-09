@@ -1,3 +1,5 @@
+param($dir)
+
 # Create directory for custom PHP configuration
 $confd = "$dir\conf.d"
 
