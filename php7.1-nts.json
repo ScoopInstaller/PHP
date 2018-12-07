@@ -1,27 +1,25 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "7.1.24",
+    "version": "7.1.25",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.1.24-nts-Win32-VC14-x64.zip",
-            "hash": "b4ce83855ff03e0c0ad6925f8c70a7368e5a0f3ae50656df1db047834b32138b"
+            "url": "https://windows.php.net/downloads/releases/php-7.1.25-nts-Win32-VC14-x64.zip",
+            "hash": "9dd4b5c76d24fbba916c5b6af1feb0a2205afd30262740c4be5aeff2267361ff"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.1.24-nts-Win32-VC14-x86.zip",
-            "hash": "b7fc804c6e7caec173af80ae4693666afdbc160da8d282d1bf0df10e817d8f64"
+            "url": "https://windows.php.net/downloads/releases/php-7.1.25-nts-Win32-VC14-x86.zip",
+            "hash": "f5c81f0d7af2e4a89ed80de06d50166dbe6a5e119b5e6a91b8e0eb697c3b51e7"
         }
     },
     "bin": [
         "php.exe",
         "php-cgi.exe"
     ],
-    "persist": [
-        "conf.d"
-    ],
+    "persist": "conf.d",
     "env_set": {
         "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
     },
