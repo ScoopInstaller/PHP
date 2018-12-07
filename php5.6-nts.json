@@ -1,27 +1,25 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "5.6.38",
+    "version": "5.6.39",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-5.6.38-nts-Win32-VC11-x64.zip",
-            "hash": "f6089b64354077cd88458706492a8676b21a8676e234dcd4d8292f6af65b1cc3"
+            "url": "https://windows.php.net/downloads/releases/php-5.6.39-nts-Win32-VC11-x64.zip",
+            "hash": "a0c34fb0abc640560d1c7c3b20dd04900827b9581e0259381ef2bf78da8cefbb"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-5.6.38-nts-Win32-VC11-x86.zip",
-            "hash": "288ac325d788af04b4a29e56b38771ccf91051f9e6a060abafbfbb3c9f376edf"
+            "url": "https://windows.php.net/downloads/releases/php-5.6.39-nts-Win32-VC11-x86.zip",
+            "hash": "c70cd888fa08ceff57ca9bbb4b4077662c6d7c7e8830b57ca2296fc8d18feb39"
         }
     },
     "bin": [
         "php.exe",
         "php-cgi.exe"
     ],
-    "persist": [
-        "conf.d"
-    ],
+    "persist": "conf.d",
     "env_set": {
         "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
     },
