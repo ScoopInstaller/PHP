@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.2.20-Win32-VC15-x64.zip",
-            "hash": "e2a5e78ebac37e5a0f37c7b816997a99caaa9c1023ac5db1d973aeb0b512168b"
+            "url": "https://windows.php.net/downloads/releases/php-7.2.20-nts-Win32-VC15-x64.zip",
+            "hash": "656694978b89bdfd8f4ea53c9c653d0da5377ec5699d60eef96b2a9f4df2276c"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.2.20-Win32-VC15-x86.zip",
-            "hash": "10fdc4b8e9555e36f5166dd544288bb52f717b8577d7015d915997d80bfd6ba1"
+            "url": "https://windows.php.net/downloads/releases/php-7.2.20-nts-Win32-VC15-x86.zip",
+            "hash": "8bc90a583daca5006efe59e0af3d9491b772d43f99fddf8934d64caeed241864"
         }
     },
     "bin": [
@@ -28,10 +28,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-VC15-x64.zip"
+                "url": "https://windows.php.net/downloads/releases/php-$version-nts-Win32-VC15-x64.zip"
             },
             "32bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-VC15-x86.zip"
+                "url": "https://windows.php.net/downloads/releases/php-$version-nts-Win32-VC15-x86.zip"
             }
         },
         "hash": {
