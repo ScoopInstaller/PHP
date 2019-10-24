@@ -1,18 +1,18 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "7.1.32",
+    "version": "7.1.33",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.1.32-nts-Win32-VC14-x64.zip",
-            "hash": "1db7b1f3615e4266d7a762f56bce7019303453e687df96af6ef7c1b2cb50f80a"
+            "url": "https://windows.php.net/downloads/releases/php-7.1.33-nts-Win32-VC14-x64.zip",
+            "hash": "071438be5bbaee8b34894ddba7852b6040991a3c853ab8141efcb1b6655bbbef"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.1.32-nts-Win32-VC14-x86.zip",
-            "hash": "5bbe34962b866c38c0e3d293d2b27aa1d93022424994d7c30ff02065a390540d"
+            "url": "https://windows.php.net/downloads/releases/php-7.1.33-nts-Win32-VC14-x86.zip",
+            "hash": "be810f87c0e88282fb8578a1fa3bbd8720c65425669b27e0437d6cde9aa90805"
         }
     },
     "bin": [
