@@ -19,11 +19,12 @@
         "php.exe",
         "php-cgi.exe"
     ],
-    "persist": [
-        "conf.d"
-    ],
+    "persist": "conf.d",
     "env_set": {
         "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
     },
-    "post_install": "if($bucket) { . \"$(bucketdir $bucket\\bin\\postinstall.ps1)\" -dir \"$dir\" }"
+    "post_install": "if($bucket) { . \"$(Find-BucketDirectory $bucket\\bin\\postinstall.ps1)\" -dir \"$dir\" }",
+    "suggest": {
+        "vcredist": "extras/vcredist2012"
+    }
 }
