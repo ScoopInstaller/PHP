@@ -42,6 +42,6 @@
         }
     },
     "suggest": {
-        "vcredist": "extras/vcredist2019"
+        "vcredist": "extras/vcredist"
     }
 }
