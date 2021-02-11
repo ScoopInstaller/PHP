@@ -1,0 +1,48 @@
+{
+    "homepage": "https://windows.php.net/downloads/releases/archives/",
+    "version": "8.0.0",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://secure.php.net/license/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://windows.php.net/downloads/releases/archives/php-8.0.0-Win32-vs16-x64.zip",
+            "hash": "712d36f5f40f128e0d5fc7dca03f2386c9f39cd250ecd1a25fb574d3d28ffa49"
+        },
+        "32bit": {
+            "url": "https://windows.php.net/downloads/releases/archives/php-8.0.0-Win32-vs16-x86.zip",
+            "hash": "63d53a937c6d7e5b056012e25911b0d0cb576cd3f16b104d0e9500e581283729"
+        }
+    },
+    "bin": [
+        "php.exe",
+        "php-cgi.exe",
+        [ "php.exe", "php8.0.0", "" ]
+    ],
+    "persist": "conf.d",
+    "env_set": {
+        "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
+    },
+    "post_install": "if($bucket) { . \"$(Find-BucketDirectory $bucket\\bin\\postinstall.ps1)\" -dir \"$dir\" }",
+    "checkver": {
+        "url": "https://windows.php.net/download/",
+        "re": "<h3 id=\"php-8.0\".*?>.*?\\(([\\d.-]+)\\)</h3>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x64.zip"
+            },
+            "32bit": {
+                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "https://windows.php.net/downloads/releases/sha256sum.txt"
+        }
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist"
+    }
+}
