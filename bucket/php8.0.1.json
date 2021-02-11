@@ -1,24 +1,25 @@
 {
-    "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "8.0.2",
+    "homepage": "https://windows.php.net/downloads/releases/archives/",
+    "version": "8.0.1",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.0.2-Win32-vs16-x64.zip",
-            "hash": "9caed2c56eadb7ac51b02d9540e45fd9e9862cabfd5ce6f4f7547a2fd95e8df6"
+            "url": "https://windows.php.net/downloads/releases/archives/php-8.0.1-Win32-vs16-x64.zip",
+            "hash": "88e559d869dc4acd7e8d9ae71090d82cf7e6271c1c2e9c3e08c9147fb8766261"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.0.2-Win32-vs16-x86.zip",
-            "hash": "42f8b715bc35f060996213ffa8cf92ae4a03203647d1f80dc0274ecda959e6a0"
+            "url": "https://windows.php.net/downloads/releases/archives/php-8.0.1-Win32-vs16-x86.zip",
+            "hash": "b485642814681ce6dcaea22acc0aaae4334f0c1923f296f26323940a269833e2"
         }
     },
     "bin": [
         "php.exe",
         "php-cgi.exe",
-        [ "php.exe", "php8.0.2", "" ]
+        [ "php.exe", "php8.0.1", "" ]
+        
     ],
     "persist": "conf.d",
     "env_set": {

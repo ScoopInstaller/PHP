@@ -1,6 +1,6 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "8.0.2",
+    "version": "8.0.2-nts",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
@@ -17,7 +17,8 @@
     },
     "bin": [
         "php.exe",
-        "php-cgi.exe"
+        "php-cgi.exe",
+        [ "php.exe", "php8.0.2-nts", "" ]
     ],
     "persist": "conf.d",
     "env_set": {
@@ -38,7 +39,7 @@
             }
         },
         "hash": {
-            "url": "$baseurl/sha256sum.txt"
+            "url": "https://windows.php.net/downloads/releases/sha256sum.txt"
         }
     },
     "suggest": {
