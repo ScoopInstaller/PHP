@@ -1,18 +1,18 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "7.4.28",
+    "version": "7.4.29",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.4.28-nts-Win32-VC15-x64.zip",
-            "hash": "a22ed33a06da592cb6eeb6e98fcf489906f50e2eea3482caf67e570600e3dbda"
+            "url": "https://windows.php.net/downloads/releases/php-7.4.29-nts-Win32-VC15-x64.zip",
+            "hash": "fd958c064e1ed18efe76298bb4606ab1abaca8400516f232b3e98ecbb3da6bc5"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-7.4.28-nts-Win32-VC15-x86.zip",
-            "hash": "3e1721390f0262b5b1c710047f92a60b3668412bdf282a9130eab15ab38c4fca"
+            "url": "https://windows.php.net/downloads/releases/php-7.4.29-nts-Win32-VC15-x86.zip",
+            "hash": "9c5980bc5b4722997062cd7d571c2e70f5f12d45059e1c10f8784ba1c5175be4"
         }
     },
     "bin": [
