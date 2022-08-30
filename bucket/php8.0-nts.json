@@ -1,18 +1,18 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "8.0.22",
+    "version": "8.0.23",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.0.22-nts-Win32-vs16-x64.zip",
-            "hash": "073f80204dd372797ce3c6354b3f23668dc729cc0f1425dec1fc801710cd847f"
+            "url": "https://windows.php.net/downloads/releases/php-8.0.23-nts-Win32-vs16-x64.zip",
+            "hash": "c33a6f8fd828a631e6bd921d17f3f8a2a683d6cf47e320373e6c938fe5e686f5"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.0.22-nts-Win32-vs16-x86.zip",
-            "hash": "f7e0b887215482e3d572eaddb84e65f3986acf249eb595e1bf509999417dd1fc"
+            "url": "https://windows.php.net/downloads/releases/php-8.0.23-nts-Win32-vs16-x86.zip",
+            "hash": "1de2e698dd6becbbe10eb678247c0770a7eb58af8cf0bdebdd89fd1b51deb9f9"
         }
     },
     "bin": [
