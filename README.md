@@ -1,7 +1,7 @@
 # PHP Bucket for [Scoop Installer](http://scoop.sh)
 
 ## Feature
-* All PHP versions from *v5.2* to *v8.1*
+* All PHP versions from *v5.2* to *v8.3*
 * Persistent custom configuration files
 * Auto update enabled
 
