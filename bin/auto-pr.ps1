@@ -1,10 +1,9 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "scoopinstaller/php:master"
+    [String]$upstream = "ScoopInstaller/PHP:master"
 )
 
-if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = scoop prefix scoop | Resolve-Path }
+if (!$env:SCOOP_HOME) { $env:SCOOP_HOME = Convert-Path (scoop prefix scoop) }
 $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
-$dir = "$psscriptroot/../bucket" # checks the parent dir
-
-Invoke-Expression -Command "$autopr -dir $dir -upstream $upstream $($args | ForEach-Object { "$_ " })"
+$dir = "$PSScriptRoot/../bucket" # checks the parent dir
+& $autopr -Dir $dir -Upstream $Upstream @Args
