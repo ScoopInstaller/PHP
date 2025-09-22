@@ -33,9 +33,6 @@
         "re": "<h3 id=\"php-8.4\".*?>.*?\\(([\\d.-]+)\\)</h3>"
     },
     "autoupdate": {
-        "hash": {
-            "url": "$baseurl/sha256sum.txt"
-        },
         "architecture": {
             "32bit": {
                 "url": "https://windows.php.net/downloads/releases/php-$version-nts-Win32-vs17-x86.zip"
@@ -43,6 +40,9 @@
             "64bit": {
                 "url": "https://windows.php.net/downloads/releases/php-$version-nts-Win32-vs17-x64.zip"
             }
+        },
+        "hash": {
+            "url": "$baseurl/sha256sum.txt"
         }
     }
 }
