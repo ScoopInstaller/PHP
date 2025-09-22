@@ -1,10 +1,10 @@
 {
     "version": "8.4.12",
     "homepage": "https://windows.php.net/downloads/releases/",
-    "description": "PHP(8.4, multithread capable builds) is a widely-used open-source scripting language that is especially suited for web development and can be embedded into HTML.",
+    "description": "PHP 8.4 (thread-safe/TS build) for Windows. Widely used open-source scripting language for web development.",
     "license": {
         "identifier": "PHP-3.01",
-        "url": "https://secure.php.net/license/"
+        "url": "https://www.php.net/license/"
     },
     "suggest": {
         "vcredist": "extras/vcredist2022"
