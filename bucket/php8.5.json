@@ -1,0 +1,49 @@
+{
+    "version": "8.5.8",
+    "homepage": "https://downloads.php.net/~windows/releases/",
+    "description": "PHP 8.5 (thread-safe/TS build) for Windows. Widely used open-source scripting language for web development.",
+    "license": {
+        "identifier": "PHP-3.01",
+        "url": "https://www.php.net/license/"
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "architecture": {
+        "32bit": {
+            "url": "https://downloads.php.net/~windows/releases/archives/php-8.5.8-Win32-vs17-x86.zip",
+            "hash": "86a01ec179c6aba884e72b8b399589b6aab7749ee6bf782adb8c335f7c756778"
+        },
+        "64bit": {
+            "url": "https://downloads.php.net/~windows/releases/archives/php-8.5.8-Win32-vs17-x64.zip",
+            "hash": "a7323e50a1e29fddc278d9297ca9a4ec134bd1cca5396af39115284a125cab2f"
+        }
+    },
+    "post_install": "if($bucket) { . \"$(Find-BucketDirectory $bucket\\bin\\postinstall.ps1)\" -dir \"$dir\" }",
+    "env_set": {
+        "PHP_INI_SCAN_DIR": "$persist_dir;$dir\\conf.d;"
+    },
+    "bin": [
+        "php.exe",
+        "php-cgi.exe"
+    ],
+    "persist": "conf.d",
+    "checkver": {
+        "url": "https://www.php.net/releases/branches.php",
+        "jsonpath": "$.[?(@.branch == '8.5')].latest"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://downloads.php.net/~windows/releases/archives/php-$version-Win32-vs17-x86.zip"
+            },
+            "64bit": {
+                "url": "https://downloads.php.net/~windows/releases/archives/php-$version-Win32-vs17-x64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://downloads.php.net/~windows/releases/releases.json",
+            "jsonpath": "$..[?(@.path == '$basename')].sha256"
+        }
+    }
+}
